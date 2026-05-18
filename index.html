@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Good Day to Be Alive</title>
+  <link rel="manifest" href="manifest.json">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-gradient-to-br from-yellow-300 via-orange-400 to-pink-400 min-h-screen">
+  <div class="max-w-md mx-auto p-6 pb-24">
+    
+    <!-- Header -->
+    <div class="text-center py-8">
+      <h1 class="text-5xl font-bold mb-1">🌅 Good Day to Be Alive</h1>
+      <p class="text-lg">One good day at a time</p>
+    </div>
+
+    <!-- Quote -->
+    <div class="bg-white/90 backdrop-blur rounded-3xl p-8 shadow-2xl mb-8">
+      <p id="quote" class="text-2xl italic text-center leading-relaxed">"Today is a good day to be alive!"</p>
+      <button onclick="newQuote()" class="mt-6 w-full bg-orange-500 text-white font-bold py-4 rounded-3xl">✨ New Good Day Quote</button>
+    </div>
+
+    <!-- Gratitude -->
+    <div class="bg-white/90 backdrop-blur rounded-3xl p-8 mb-8">
+      <h2 class="font-bold text-xl mb-4">What are you grateful for today?</h2>
+      <textarea id="gratitude" rows="4" class="w-full p-5 rounded-2xl border" placeholder="I'm grateful for..."></textarea>
+      <button onclick="saveGratitude()" class="mt-4 w-full bg-emerald-500 text-white font-bold py-4 rounded-3xl">💛 Save Gratitude</button>
+    </div>
+
+    <!-- Shop -->
+    <div class="space-y-4">
+      <a href="https://gddytba.gumroad.com/l/wkwucn" target="_blank" 
+         class="block text-center bg-white text-orange-600 font-bold py-6 rounded-3xl shadow-xl text-xl">
+        🌟 30-Day Challenge - $9
+      </a>
+      
+      <a href="https://gddytba.gumroad.com/l/Izshqd" target="_blank"  
+         class="block text-center bg-gradient-to-r from-orange-500 to-pink-500 text-white font-bold py-6 rounded-3xl shadow-xl text-xl">
+        🔥 Complete Bundle - $19 (Best Value)
+      </a>
+    </div>
+
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>
