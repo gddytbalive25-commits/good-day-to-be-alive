@@ -1,20 +1,20 @@
 {
   "name": "Good Day to Be Alive",
   "short_name": "Good Day",
-  "description": "Daily motivation, gratitude & positivity - One good day at a time",
+  "description": "Daily motivation, gratitude & positivity",
   "start_url": "/index.html",
   "display": "standalone",
-  "background_color": "#f97316",
-  "theme_color": "#f97316",
+  "background_color": "#f59e0b",
+  "theme_color": "#f59e0b",
   "orientation": "portrait-primary",
   "icons": [
     {
-      "src": "https://via.placeholder.com/192.png/FF9800/FFFFFF?text=🌅",
+      "src": "https://gooddaytobealive.netlify.app/icon-192.png",
       "sizes": "192x192",
       "type": "image/png"
     },
     {
-      "src": "https://via.placeholder.com/512.png/FF9800/FFFFFF?text=🌅",
+      "src": "https://gooddaytobealive.netlify.app/icon-512.png",
       "sizes": "512x512",
       "type": "image/png"
     }
