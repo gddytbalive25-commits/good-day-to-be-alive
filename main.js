@@ -24,7 +24,26 @@ function saveGratitude() {
   document.getElementById("gratitude").value = "";
 }
 
-// Initialize App
+// PWA Install Prompt
+let deferredPrompt;
+window.addEventListener('beforeinstallprompt', (e) => {
+  deferredPrompt = e;
+  showInstallButton();
+});
+
+function showInstallButton() {
+  const installBtn = document.createElement('button');
+  installBtn.textContent = '📲 Add to Home Screen';
+  installBtn.className = 'mt-6 w-full bg-black text-white font-bold py-4 rounded-3xl shadow-xl';
+  installBtn.onclick = () => {
+    if (deferredPrompt) {
+      deferredPrompt.prompt();
+    }
+  };
+  document.querySelector('.space-y-4').after(installBtn);
+}
+
+// Initialize
 window.onload = () => {
   newQuote();
 };
