@@ -8,41 +8,54 @@
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="styles.css">
 </head>
-<body class="bg-gradient-to-br from-yellow-300 via-orange-400 to-pink-400 min-h-screen">
+<body class="bg-gradient-to-br from-yellow-300 via-orange-400 to-pink-400 min-h-screen text-gray-900">
   <div class="max-w-md mx-auto p-6 pb-24">
-    
-    <!-- Header -->
+
+    <!-- Header / Logo Area -->
     <div class="text-center py-8">
-      <h1 class="text-5xl font-bold mb-1">🌅 Good Day to Be Alive</h1>
-      <p class="text-lg">One good day at a time</p>
+      <h1 class="text-5xl font-bold tracking-tight">🌅 Good Day to Be Alive</h1>
+      <p class="text-lg mt-2 text-orange-900">One good day at a time</p>
     </div>
 
-    <!-- Quote -->
-    <div class="bg-white/90 backdrop-blur rounded-3xl p-8 shadow-2xl mb-8">
-      <p id="quote" class="text-2xl italic text-center leading-relaxed">"Today is a good day to be alive!"</p>
-      <button onclick="newQuote()" class="mt-6 w-full bg-orange-500 text-white font-bold py-4 rounded-3xl">✨ New Good Day Quote</button>
+    <!-- Daily Quote -->
+    <div class="bg-white/95 backdrop-blur rounded-3xl p-8 shadow-2xl mb-8">
+      <p id="quote" class="text-2xl italic text-center leading-relaxed min-h-[120px] flex items-center justify-center">
+        "Today is a good day to be alive!"
+      </p>
+      <button onclick="newQuote()" 
+              class="mt-6 w-full bg-orange-500 hover:bg-orange-600 text-white font-bold py-4 rounded-3xl text-lg transition">
+        ✨ New Good Day Quote
+      </button>
     </div>
 
     <!-- Gratitude -->
-    <div class="bg-white/90 backdrop-blur rounded-3xl p-8 mb-8">
+    <div class="bg-white/95 backdrop-blur rounded-3xl p-8 mb-8">
       <h2 class="font-bold text-xl mb-4">What are you grateful for today?</h2>
-      <textarea id="gratitude" rows="4" class="w-full p-5 rounded-2xl border" placeholder="I'm grateful for..."></textarea>
-      <button onclick="saveGratitude()" class="mt-4 w-full bg-emerald-500 text-white font-bold py-4 rounded-3xl">💛 Save Gratitude</button>
+      <textarea id="gratitude" rows="4" 
+                class="w-full p-5 rounded-2xl border border-orange-200 focus:border-orange-500 outline-none"
+                placeholder="I'm grateful for..."></textarea>
+      <button onclick="saveGratitude()" 
+              class="mt-4 w-full bg-emerald-500 hover:bg-emerald-600 text-white font-bold py-4 rounded-3xl">
+        💛 Save Gratitude
+      </button>
     </div>
 
-    <!-- Shop -->
+    <!-- Shop Section -->
     <div class="space-y-4">
-      <a href="https://gddytba.gumroad.com/l/wkwucn" target="_blank" 
-         class="block text-center bg-white text-orange-600 font-bold py-6 rounded-3xl shadow-xl text-xl">
-        🌟 30-Day Challenge - $9
+      <a href="https://gddytba.gumroad.com/l/wkwucn" target="_blank"
+         class="block text-center bg-white text-orange-600 font-bold py-6 rounded-3xl shadow-xl text-xl hover:scale-105 transition">
+        🌟 30-Day Challenge — Only $9
       </a>
       
-      <a href="https://gddytba.gumroad.com/l/Izshqd" target="_blank"  
-         class="block text-center bg-gradient-to-r from-orange-500 to-pink-500 text-white font-bold py-6 rounded-3xl shadow-xl text-xl">
-        🔥 Complete Bundle - $19 (Best Value)
+      <a href="https://gddytba.gumroad.com/l/lzshqd" target="_blank"
+         class="block text-center bg-gradient-to-r from-orange-500 to-pink-500 text-white font-bold py-6 rounded-3xl shadow-xl text-xl hover:scale-105 transition">
+        🔥 Complete Bundle — $19 (Best Value)
       </a>
     </div>
 
+    <div class="text-center mt-10 text-xs text-orange-900/70">
+      Made with ❤️ by Good Day to Be Alive LLC
+    </div>
   </div>
 
   <script src="main.js"></script>
