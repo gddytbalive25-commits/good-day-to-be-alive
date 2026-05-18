@@ -5,7 +5,8 @@ const quotes = [
   "You are unstoppable today.",
   "Breathe. Smile. Repeat.",
   "Your vibe attracts your tribe.",
-  "The best time to start is now."
+  "The best time to start is now.",
+  "You woke up — that’s already a win."
 ];
 
 function newQuote() {
@@ -16,14 +17,14 @@ function newQuote() {
 function saveGratitude() {
   const text = document.getElementById("gratitude").value.trim();
   if (!text) {
-    alert("Write something beautiful first 💛");
+    alert("Write something you're grateful for 💛");
     return;
   }
-  alert("Gratitude saved! Your vibe just went up 🔥");
+  alert("Gratitude saved! Your vibe is rising 🔥");
   document.getElementById("gratitude").value = "";
 }
 
-// Initialize
+// Initialize App
 window.onload = () => {
   newQuote();
 };
