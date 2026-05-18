@@ -1,7 +1,7 @@
 {
   "name": "Good Day to Be Alive",
   "short_name": "Good Day",
-  "description": "Daily motivation, gratitude & positivity in your pocket",
+  "description": "Daily motivation, gratitude & positivity - One good day at a time",
   "start_url": "/index.html",
   "display": "standalone",
   "background_color": "#f97316",
