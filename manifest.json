@@ -1,0 +1,22 @@
+{
+  "name": "Good Day to Be Alive",
+  "short_name": "Good Day",
+  "description": "Daily motivation, gratitude & positivity in your pocket",
+  "start_url": "/index.html",
+  "display": "standalone",
+  "background_color": "#f97316",
+  "theme_color": "#f97316",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "https://via.placeholder.com/192.png/FF9800/FFFFFF?text=🌅",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "https://via.placeholder.com/512.png/FF9800/FFFFFF?text=🌅",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
